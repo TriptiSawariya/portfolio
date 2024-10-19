@@ -1,0 +1,1435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+nav {
+    margin: 0;
+    background-color: rgb(32, 71, 102);
+    padding: 10px 30px;
+    color: white;
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    
+    align-items: center;
+}
+.logo{
+    margin-right: 200px;
+    margin-left:80px;
+}
+.logo h1{
+font-size: 50px;
+font-weight: 700;
+color: white;
+}
+.logo h1 span{
+    font-size: 50px;
+    font-weight: 700;
+    color: red;
+    }
+
+nav ul {
+    display: inline-flex;
+    text-align: right;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin: 10px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    justify-content: center;
+}
+
+
+nav .btn{
+    margin-left:250px;
+}
+nav li button{
+    width: 180px;
+    background-color:white ;
+    align-items: flex-end;
+    border: none;
+    border-radius: 5px;
+    
+    height: 50px;
+    
+    
+}
+nav li button a{
+    
+    color: rgb(32, 71, 102);
+    font-weight: 700;
+}
+
+main {
+    background-image: url(https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    padding: 10px 11%;
+}
+
+main img {
+    border-radius: 50%;
+    margin: 15px;
+}
+
+main .intro {
+    margin: 120px 80px;
+    width: 450px;
+    text-align: left;
+}
+
+main .intro h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(167, 9, 9);
+}
+
+main .intro h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    color: rgb(32, 71, 102);
+}
+
+main h3 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+main button {
+    margin: 30px 0;
+    width: 160px;
+    height: 43px;
+    background-color: rgb(32, 71, 102);
+    border: none;
+    padding: 10px 8px;
+    border-radius: 20px;
+}
+
+main button a {
+    font-size: 19px;
+    text-decoration: none;
+    color: white;
+}
+
+.about {
+    display: inline-flex;
+    margin: 50px 15%;
+    gap: 50px;
+}
+
+.about h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.about p {
+    font-size: 22px;
+    color: rgb(85, 83, 83);
+}
+.about .about-text button{
+    padding: 10px 20px;
+    border: none;
+    width: 170px;
+    height: 50px;
+    background-color:rgb(119, 12, 12) ;
+    margin: 30px 0;
+    border-radius: 15px;
+}
+
+.about .about-text button a{
+   font-size: 28px;
+   font-weight: 700;
+   color: white;
+   text-decoration: none;
+}
+
+
+.counter{
+    text-align: center;
+   margin: 40px 0; 
+}
+
+.counter h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(32, 71, 102);
+    
+}
+hr{
+    width: 205px;
+    height: 5px;
+    text-align: center;
+    background-color: rgb(32, 71, 102);
+    align-items: center;
+    margin:10px 43% ;
+    
+}
+.my_work {
+    padding: 0 170px;
+}
+.my_work h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.my_work .work {
+    display: inline-flex;
+    gap: 30px;
+}
+
+.work_item {
+    position: relative;
+    width: 370px;
+    border-radius: 20px;
+}
+
+.work_item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.work_item:hover img {
+    transform: scale(1.1);
+}
+
+.work_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    transition: opacity 0.5s ease;
+}
+
+.work_item:hover .work_text {
+    opacity: 1;
+}
+
+.work_text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.work_text h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.my_work button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid  rgb(32, 71, 102);
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    margin: 20px 44% ;
+    width: 150px;
+    background-color:  rgb(32, 71, 102);
+
+}
+.my_work button a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.contact{
+    display: flex;
+    background-color: black;
+    padding: 30px 80px;
+    color: white;
+    text-align: left;
+}
+.contact .info {
+    list-style: none;
+    width: 500px;
+    padding: 10px 0 10px 50px;
+
+}
+.contact .info h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 30px 20px;
+}
+.contact .info ul li{
+    list-style: none;
+    text-decoration: none;  
+    justify-content: flex-start;
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    text-align: left;
+    margin-top: 30px;
+    align-items: center;
+    font-size: 22px;
+}
+
+.contact-form {
+background-color: transparent;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 100%;
+min-width: 700px;
+}
+
+.contact-form label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+color: white;
+font-size: 27px;
+}
+.contact-form input, .contact-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+.contact-form button {
+width: 100%;
+padding: 10px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+.contact-form button:hover {
+background-color: #45a049;
+}
+
+footer p{
+    font-size: 23px;
+}
+
+#myList {
+    display: none; /* Hide the list by default */
+    margin-top: 10px;
+}
+
+#clickableText {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#myList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#myList ul li {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    
+
+    nav {
+        margin: 0;
+        background-color: rgb(32, 71, 102);
+        padding: 10px 10px;
+        color: white;
+        text-align: center;
+        display: inline-flex;
+        width: 100%;
+        
+        align-items: center;
+    }
+    .logo{
+        margin-right: 30px;
+        margin-left:10px;
+    }
+    .logo h1{
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    }
+    .logo h1 span{
+        font-size: 45px;
+        font-weight: 700;
+        color: red;
+        }
+    
+    nav ul {
+        display: inline-flex;
+        text-align: right;
+        align-items: center;
+    }
+    
+    nav li {
+        list-style: none;
+        margin: 5px;
+    }
+    
+    nav li a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        justify-content: center;
+    }
+    nav .btn{
+        margin-left: 20px;
+    }
+    nav li button{
+        width: 130px;
+        background-color:white ;
+        align-items: flex-end;
+        border: none;
+        border-radius: 5px;
+        margin-left: 0px;
+        height: 50px;
+        
+        
+    }
+    nav li button a{
+        
+        color: rgb(32, 71, 102);
+        font-weight: 700;
+    }
+    
+    main {
+        background-image: url(https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        padding: 20px 5%;
+    }
+    
+    main .pic {
+        border-radius: 50%;
+        margin: 15px;
+        width: 250px;
+        height: 250px;
+    }
+    main .icon img{
+        margin:2px 15px;
+    }
+    
+    main .intro {
+        margin: 10px 50px;
+        width: 450px;
+        text-align: left;
+    }
+    
+    main .intro h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgb(167, 9, 9);
+    }
+    
+    main .intro h1 {
+        font-size: 52px;
+        font-weight: 800;
+        margin-bottom: 5px;
+        color: rgb(32, 71, 102);
+    }
+    
+    main h3 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    main button {
+        margin: 10px 0;
+        width: 160px;
+        height: 43px;
+        background-color: rgb(32, 71, 102);
+        border: none;
+        padding: 10px 8px;
+        border-radius: 20px;
+    }
+    
+    main button a {
+        font-size: 19px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .about {
+        display: inline-flex;
+        margin: 50px 5%;
+        gap: 40px;
+    }
+    
+    .about h1 {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    
+    .about p {
+        font-size: 20px;
+        color: rgb(85, 83, 83);
+    }
+    .about .about-text button{
+        padding: 10px 20px;
+        border: none;
+        width: 170px;
+        height: 50px;
+        background-color:rgb(119, 12, 12) ;
+        margin: 30px 0;
+        border-radius: 15px;
+    }
+    
+    .about .about-text button a{
+       font-size: 28px;
+       font-weight: 700;
+       color: white;
+       text-decoration: none;
+    }
+    
+    
+    .counter{
+        text-align: center;
+       margin: 40px 0; 
+    }
+    
+    .counter h2{
+        font-size: 35px;
+        font-weight: 700;
+        color: rgb(32, 71, 102);
+        
+    }
+    hr{
+        width: 190px;
+        height: 5px;
+        text-align: center;
+        background-color: rgb(32, 71, 102);
+        align-items: center;
+        margin:10px 35% ;
+        
+    }
+    .my_work {
+        padding: 0 150px;
+        text-align: center;
+    }
+    .my_work h1{
+        font-size: 50px;
+        text-align: center;
+        font-weight: 700;
+        margin: 30px 0;
+    }
+    
+    .my_work .work {
+        display: block;
+        gap: 50px;
+    }
+    
+    .work_item {
+        position: relative;
+        width: 440px;
+        border-radius: 20px;
+    }
+    
+    .work_item img {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .work_item:hover img {
+        transform: scale(1.1);
+    }
+    
+    .work_text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        transition: opacity 0.5s ease;
+    }
+    
+    .work_item:hover .work_text {
+        opacity: 1;
+    }
+    
+    .work_text h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .work_text h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .my_work button{
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 2px solid  rgb(32, 71, 102);
+        justify-content: center;
+        border-radius: 5px;
+        align-items: center;
+        margin: 20px 33% ;
+        width: 150px;
+        background-color:  rgb(32, 71, 102);
+    
+    }
+    .my_work button a{
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+    }
+    .contact{
+        display: flex;
+        background-color: black;
+        padding: 30px 30px;
+        color: white;
+        text-align: left;
+    }
+    .contact .info {
+        list-style: none;
+        width: 350px;
+        padding: 10px 0 10px 20px;
+    
+    }
+    .contact .info h2{
+        font-size: 40px;
+        font-weight: 700;
+        margin: 30px 20px;
+    }
+    .contact .info ul li{
+        list-style: none;
+        text-decoration: none;  
+        justify-content: flex-start;
+        display: flex;
+        justify-content: left;
+        gap: 10px;
+        text-align: left;
+        margin-top: 30px;
+        align-items: center;
+        font-size: 18px;
+    }
+    
+    .contact-form {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-width: 350px;
+    }
+    
+    .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 27px;
+    }
+    .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+    .contact-form button:hover {
+    background-color: #45a049;
+    }
+    
+    footer p{
+        font-size: 23px;
+    }
+    
+    #myList {
+        display: none; /* Hide the list by default */
+        margin-top: 10px;
+    }
+    
+    #clickableText {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    #myList ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #myList ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 600px) and (min-width:500px){
+    
+
+    nav {
+        margin: 0;
+        background-color: rgb(32, 71, 102);
+        padding: 10px 10px;
+        color: white;
+        text-align: center;
+        display: inline-flex;
+        width: 100%;
+        
+        align-items: center;
+    }
+    .logo{
+        margin-right: 15px;
+        margin-left:10px;
+    }
+    .logo h1{
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+    }
+    .logo h1 span{
+        font-size: 38px;
+        font-weight: 700;
+        color: red;
+        }
+    
+    nav ul {
+        display: inline-flex;
+        text-align: right;
+        align-items: center;
+    }
+    
+    nav li {
+        list-style: none;
+        margin: 3px;
+    }
+    
+    nav li a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        justify-content: center;
+    }
+    nav .btn{
+        margin-left: 10px;
+    }
+    nav li button{
+        width: 100px;
+        background-color:white ;
+        align-items: flex-end;
+        border: none;
+        border-radius: 5px;
+        margin-left: 0px;
+        height: 40px;
+        
+        
+    }
+    nav li button a{
+        font-size: 14px;
+        color: rgb(32, 71, 102);
+        font-weight: 700;
+    }
+    
+    main {
+        background-image: url(https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        padding: 20px 3%;
+    }
+    
+    main .pic {
+        border-radius: 50%;
+        margin: 13px;
+        width: 250px;
+        height: 250px;
+    }
+    main .icon img{
+        margin:2px 15px;
+    }
+    
+    main .intro {
+        margin: 8px 30px;
+        width: 450px;
+        text-align: left;
+    }
+    
+    main .intro h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgb(167, 9, 9);
+    }
+    
+    main .intro h1 {
+        font-size: 50px;
+        font-weight: 800;
+        margin-bottom: 5px;
+        color: rgb(32, 71, 102);
+    }
+    
+    main h3 {
+        font-size: 27px;
+        font-weight: 700;
+    }
+    
+    main button {
+        margin: 8px 0;
+        width: 150px;
+        height: 40px;
+        background-color: rgb(32, 71, 102);
+        border: none;
+        padding: 10px 8px;
+        border-radius: 20px;
+    }
+    
+    main button a {
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .about {
+        display: inline-flex;
+        margin: 30px 5% 50px;
+        gap: 40px;
+    }
+    
+    .about h1 {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    
+    .about p {
+        font-size: 20px;
+        color: rgb(85, 83, 83);
+    }
+    .about .about-text button{
+        padding: 10px 20px;
+        border: none;
+        width: 170px;
+        height: 50px;
+        background-color:rgb(119, 12, 12) ;
+        margin: 30px 0;
+        border-radius: 15px;
+    }
+    
+    .about .about-text button a{
+       font-size: 28px;
+       font-weight: 700;
+       color: white;
+       text-decoration: none;
+    }
+    
+    
+    .counter{
+        text-align: center;
+       margin: 40px 0; 
+    }
+    
+    .counter h2{
+        font-size: 35px;
+        font-weight: 700;
+        color: rgb(32, 71, 102);
+        
+    }
+    hr{
+        width: 190px;
+        height: 5px;
+        text-align: center;
+        background-color: rgb(32, 71, 102);
+        align-items: center;
+        margin:10px 35% ;
+        
+    }
+    .my_work {
+        padding: 0 100px;
+        text-align: center;
+    }
+    .my_work h1{
+        font-size: 50px;
+        text-align: center;
+        font-weight: 700;
+        margin: 30px 0;
+    }
+    
+    .my_work .work {
+        display: block;
+        gap: 50px;
+    }
+    
+    .work_item {
+        position: relative;
+        width: 440px;
+        border-radius: 20px;
+    }
+    
+    .work_item img {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .work_item:hover img {
+        transform: scale(1.1);
+    }
+    
+    .work_text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        transition: opacity 0.5s ease;
+    }
+    
+    .work_item:hover .work_text {
+        opacity: 1;
+    }
+    
+    .work_text h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .work_text h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .my_work button{
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 2px solid  rgb(32, 71, 102);
+        justify-content: center;
+        border-radius: 5px;
+        align-items: center;
+        margin: 20px 33% ;
+        width: 150px;
+        background-color:  rgb(32, 71, 102);
+    
+    }
+    .my_work button a{
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+    }
+    .contact{
+        display: flex;
+        background-color: black;
+        padding: 30px 10px;
+        color: white;
+        text-align: left;
+    }
+    .contact .info {
+        list-style: none;
+        width: 50%;
+        padding: 10px 0 10px 20px;
+    
+    }
+    .contact .info h2{
+        font-size: 35px;
+        font-weight: 700;
+        margin: 30px 20px;
+    }
+    .contact .info ul li{
+        list-style: none;
+        text-decoration: none;  
+        justify-content: flex-start;
+        display: flex;
+        justify-content: left;
+        gap: 5px;
+        text-align: left;
+        margin-top: 30px;
+        align-items: center;
+        font-size: 15px;
+    }
+   
+    .form{
+        float: right;
+    }
+    
+    .contact-form {
+    background-color: transparent;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-width: 300px;
+    float: right;
+    }
+    
+    .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    }
+    .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+    .contact-form button:hover {
+    background-color: #45a049;
+    }
+    
+    footer p{
+        font-size: 23px;
+    }
+    
+    #myList {
+        display: none; /* Hide the list by default */
+        margin-top: 10px;
+    }
+    
+    #clickableText {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    #myList ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #myList ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    
+
+    nav {
+        margin: 0;
+        background-color: rgb(32, 71, 102);
+        padding: 10px 10px;
+        color: white;
+        text-align: center;
+        display: inline-flex;
+        width: 100%;
+        
+        align-items: center;
+    }
+    .logo{
+        margin-right: 15px;
+        margin-left:10px;
+    }
+    .logo h1{
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+    }
+    .logo h1 span{
+        font-size: 38px;
+        font-weight: 700;
+        color: red;
+        }
+    
+    nav ul {
+        display: inline-flex;
+        text-align: right;
+        align-items: center;
+    }
+    
+    nav li {
+        list-style: none;
+        margin: 3px;
+    }
+    
+    nav li a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        justify-content: center;
+    }
+    nav .btn{
+        margin-left: 10px;
+    }
+    nav li button{
+        width: 100px;
+        background-color:white ;
+        align-items: flex-end;
+        border: none;
+        border-radius: 5px;
+        margin-left: 0px;
+        height: 40px;
+        
+        
+    }
+    nav li button a{
+        font-size: 14px;
+        color: rgb(32, 71, 102);
+        font-weight: 700;
+    }
+    
+    main {
+        background-image: url(https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        padding: 20px 3%;
+    }
+    
+    main .pic {
+        border-radius: 50%;
+        margin: 13px;
+        width: 250px;
+        height: 250px;
+    }
+    main .icon img{
+        margin:2px 15px;
+    }
+    
+    main .intro {
+        margin: 8px 30px;
+        width: 450px;
+        text-align: left;
+    }
+    
+    main .intro h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgb(167, 9, 9);
+    }
+    
+    main .intro h1 {
+        font-size: 50px;
+        font-weight: 800;
+        margin-bottom: 5px;
+        color: rgb(32, 71, 102);
+    }
+    
+    main h3 {
+        font-size: 27px;
+        font-weight: 700;
+    }
+    
+    main button {
+        margin: 8px 0;
+        width: 150px;
+        height: 40px;
+        background-color: rgb(32, 71, 102);
+        border: none;
+        padding: 10px 8px;
+        border-radius: 20px;
+    }
+    
+    main button a {
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .about {
+        display: inline-flex;
+        margin: 30px 5% 50px;
+        gap: 40px;
+    }
+    
+    .about h1 {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    
+    .about p {
+        font-size: 20px;
+        color: rgb(85, 83, 83);
+    }
+    .about .about-text button{
+        padding: 10px 20px;
+        border: none;
+        width: 170px;
+        height: 50px;
+        background-color:rgb(119, 12, 12) ;
+        margin: 30px 0;
+        border-radius: 15px;
+    }
+    
+    .about .about-text button a{
+       font-size: 28px;
+       font-weight: 700;
+       color: white;
+       text-decoration: none;
+    }
+    
+    
+    .counter{
+        text-align: center;
+       margin: 40px 0; 
+    }
+    
+    .counter h2{
+        font-size: 35px;
+        font-weight: 700;
+        color: rgb(32, 71, 102);
+        
+    }
+    hr{
+        width: 190px;
+        height: 5px;
+        text-align: center;
+        background-color: rgb(32, 71, 102);
+        align-items: center;
+        margin:10px 35% ;
+        
+    }
+    .my_work {
+        padding: 0 100px;
+        text-align: center;
+    }
+    .my_work h1{
+        font-size: 50px;
+        text-align: center;
+        font-weight: 700;
+        margin: 30px 0;
+    }
+    
+    .my_work .work {
+        display: block;
+        gap: 50px;
+    }
+    
+    .work_item {
+        position: relative;
+        width: 440px;
+        border-radius: 20px;
+    }
+    
+    .work_item img {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .work_item:hover img {
+        transform: scale(1.1);
+    }
+    
+    .work_text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        transition: opacity 0.5s ease;
+    }
+    
+    .work_item:hover .work_text {
+        opacity: 1;
+    }
+    
+    .work_text h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .work_text h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .my_work button{
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 2px solid  rgb(32, 71, 102);
+        justify-content: center;
+        border-radius: 5px;
+        align-items: center;
+        margin: 20px 33% ;
+        width: 150px;
+        background-color:  rgb(32, 71, 102);
+    
+    }
+    .my_work button a{
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+    }
+    .contact{
+        display: flex;
+        background-color: black;
+        padding: 30px 10px;
+        color: white;
+        text-align: left;
+    }
+    .contact .info {
+        list-style: none;
+        width: 50%;
+        padding: 10px 0 10px 20px;
+    
+    }
+    .contact .info h2{
+        font-size: 35px;
+        font-weight: 700;
+        margin: 30px 20px;
+    }
+    .contact .info ul li{
+        list-style: none;
+        text-decoration: none;  
+        justify-content: flex-start;
+        display: flex;
+        justify-content: left;
+        gap: 5px;
+        text-align: left;
+        margin-top: 30px;
+        align-items: center;
+        font-size: 15px;
+    }
+   
+    .form{
+        float: right;
+    }
+    
+    .contact-form {
+    background-color: transparent;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-width: 300px;
+    float: right;
+    }
+    
+    .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    }
+    .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+    .contact-form button:hover {
+    background-color: #45a049;
+    }
+    
+    footer p{
+        font-size: 23px;
+    }
+    
+    #myList {
+        display: none; /* Hide the list by default */
+        margin-top: 10px;
+    }
+    
+    #clickableText {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    #myList ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #myList ul li {
+        margin: 5px 0;
+    }
+}
